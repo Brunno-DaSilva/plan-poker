@@ -17,6 +17,7 @@ import {
   MdLibraryMusic,
   MdPlaylistAdd,
   MdFavorite,
+  MdOutlineLooks,
 } from "react-icons/md";
 
 const NAV_MENU = [
@@ -60,7 +61,7 @@ const Sidebar = () => {
       bg="#f4f4f4"
       paddingX="5px"
       color="gray"
-      bgGradient="linear(to-t, #ffffff, #f4f4f4)"
+      bgGradient="linear(to-t, #ffffff, #f3f2f1)"
       borderRight="2px solid #30e6e6"
     >
       <Box paddingY="20px" height="100%">
@@ -78,7 +79,7 @@ const Sidebar = () => {
                       <LinkOverlay>
                         <ListIcon
                           as={menu.icon}
-                          color="white"
+                          color="#868e8f"
                           marginRight="20px"
                         />
                         {menu.name}
@@ -100,7 +101,7 @@ const Sidebar = () => {
                       <LinkOverlay>
                         <ListIcon
                           as={music.icon}
-                          color="white"
+                          color="#868e8f"
                           marginRight="20px"
                         />
                         {music.name}
