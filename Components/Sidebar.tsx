@@ -57,11 +57,11 @@ const Sidebar = () => {
     <Box
       width="100%"
       height="100vh"
-      bg="#0f0c29"
+      bg="#f4f4f4"
       paddingX="5px"
       color="gray"
-      bgGradient="linear(to-t, #1d1d3b, #0f0c29)"
-      border="1px solid lightgreen"
+      bgGradient="linear(to-t, #ffffff, #f4f4f4)"
+      borderRight="2px solid #30e6e6"
     >
       <Box paddingY="20px" height="100%">
         <Box width="120px" marginBottom="20px" paddingY="20px">
