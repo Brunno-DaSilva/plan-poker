@@ -62,11 +62,11 @@ const Sidebar = () => {
       paddingX="5px"
       color="gray"
       bgGradient="linear(to-t, #ffffff, #f3f2f1)"
-      borderRight="2px solid #30e6e6"
+      borderRight="2px solid #b5ffff"
     >
       <Box paddingY="20px" height="100%">
         <Box width="120px" marginBottom="20px" paddingY="20px">
-          <NextImage src="/musicfy-logo-white.png" width={220} height={200} />
+          <NextImage src="/blogo-gray.png" width={66} height={108} />
         </Box>
 
         <Box marginBottom="20px">
@@ -113,7 +113,7 @@ const Sidebar = () => {
             })}
           </List>
         </Box>
-        <Divider color="gray.800" />
+        <Divider color="gray.400" />
 
         <Box height="66%" overflowY="auto" paddingY="20px">
           <List spacing={2}>
