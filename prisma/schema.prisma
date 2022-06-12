@@ -8,4 +8,39 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model User {
+  id        Int        @id @default(autoincrement())
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  email     String     @unique
+  firstName String
+  lastName  String
+  password  String
+  room      Room[]
+  roomlists Roomlist[]
+
+}
+
+model Room {
+  id        Int        @id @default(autoincrement())
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  name      String
+  user      User       @relation(fields: [userId], references: [id])
+  userId    Int  
+  roomlists Roomlist[]
+
+}
+
+model Roomlist {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  name      String
+  room      Room[]   
+  user      User       @relation(fields: [userId], references: [id])
+  userId    Int  
 }
